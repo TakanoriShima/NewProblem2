@@ -4,7 +4,7 @@
 
 2次元座標の中の様々な図形を表現するクラスを作成し、そのインスタンスたちをListを使って一元管理するプログラムを作成していきましょう。
 
-<u>今回、figuresというパッケージの中に作成するクラス、インターフェースは以下の9つです。</u>
+__今回、figuresというパッケージの中に作成するクラス、インターフェースは以下の9つです。__
 
 1. Figure.java ... 「図形」という抽象的な概念を表現する抽象クラス
 2. Drawable.java ... 図形の特徴を文字列として表現する抽象メソッドを持つインターフェース
@@ -32,7 +32,7 @@ private宣言されたフィールド変数に関しては、すべてセッタ�
 - オーバーライドされたメソッド
 
 
-#### <u>Figure.java（図形を表す抽象クラス）</u>
+#### __Figure.java（図形を表す抽象クラス）__
 
 |  フィールド変数名  |  意味 | 型 | アクセス修飾子 | 
 | ---- | ---- | ---- | ---- |
@@ -44,7 +44,7 @@ private宣言されたフィールド変数に関しては、すべてセッタ�
 |  public Figure(String name)  |  コンストラクタ  | public | name(図形の名前) | なし | 
 
 
-#### <u>Drawable.java（図形の特徴を表すメソッドを持つインターフェース）</u>
+#### __Drawable.java（図形の特徴を表すメソッドを持つインターフェース）__
 
 
 |  メソッド  | 意味 |  アクセス修飾子 | 引数  | 戻り値 |
@@ -52,7 +52,7 @@ private宣言されたフィールド変数に関しては、すべてセッタ�
 |  public abstract String draw()  |  図形の特徴を文字列として表現する  | public | なし | 文字列 | 
 
 
-#### <u>Point.java（「点」を表すクラス）</u>
+#### __Point.java（「点」を表すクラス）__
 
 Figureクラスを継承し、Drawableインターフェースを実装します。
 
@@ -67,7 +67,7 @@ Figureクラスを継承し、Drawableインターフェースを実装します
 | ---- | ---- | ---- | ---- | ---- |
 |  public Point(String name, int x, int y)  |  コンストラクタ  | public | name(図形の名前), x(x座標), y(y座標) | なし | 
 
-#### <u>Line.java（「線分」を表すクラス）</u>
+#### __Line.java（「線分」を表すクラス）__
 
 Figureクラスを継承し、Drawableインターフェースを実装します。
 
@@ -83,7 +83,7 @@ Figureクラスを継承し、Drawableインターフェースを実装します
 |  public Line(String name, int x1, int y1, int x2, int y2)  |  コンストラクタ  | public | name(図形の名前), x1(線分の一方の端の点のx座標), y1(線分の一方の端の点y座標), x2(線分の他方の端の点のx座標), y2(線分の他方の端の点y座標) | なし | 
 
 
-#### <u>Shape.java（「面積という概念を持つ」抽象クラス）</u>
+#### __Shape.java（「面積という概念を持つ」抽象クラス）__
 
 Figureクラスを継承し、Drawableインターフェースを実装します。
 
@@ -99,7 +99,7 @@ Figureクラスを継承し、Drawableインターフェースを実装します
 |  public abstract double getArea()  |  図形の面積を求める  | public | なし | 面積の値 | 
 
 
-#### <u>Circle.java（「円」を表現するクラス）</u>
+#### __Circle.java（「円」を表現するクラス）__
 
 Shapeクラスを継承します。
 
@@ -108,7 +108,7 @@ Shapeクラスを継承します。
 |  radius | 円の半径 | int | private |
 
 
-#### <u>Rectange.java（「長方形」を表現するクラス）</u>
+#### __Rectange.java（「長方形」を表現するクラス）__
 
 Shapeクラスを継承します。
 
@@ -124,7 +124,7 @@ Shapeクラスを継承します。
 |  public Rectangle(String name, int x, int y, int width, int height)  |  コンストラクタ  | public | name(図形の名前), x(長方形の左上隅の点のx座標), y(長方形の左上隅の点のy座標), width(長方形の横幅), height(長方形の高さ) | なし | 
 
 
-#### <u>Square.java（「正方形」を表現するクラス）</u>
+#### __Square.java（「正方形」を表現するクラス）__
 
 Rectangeクラスを継承します。
 
@@ -134,7 +134,7 @@ Rectangeクラスを継承します。
 |  public Square(String name, int x, int y, int length)   |  コンストラクタ  | public | name(図形の名前), x(正方形の左上隅の点のx座標), y(正方形の左上隅の点のy座標), length(正方形の一辺の長さ) | なし | 
 
 
-#### <u>Review04Advance.java（mainメソッドを持ったクラス）</u>
+#### __Review04Advance.java（mainメソッドを持ったクラス）__
 
 以下のひな形を利用してください。
 
@@ -164,7 +164,7 @@ Rectangeクラスを継承します。
 		
 				// 図形リストのそれぞれの要素を内容を表示
 				for (Figure f : figureList) {
-		       　　// ここを埋めてください
+						// ここを埋めてください
 				}
 			}
 		}
